@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100 300 400 700 900&display=swap');
+
+body {
+	background: url('./images/pattern-background-desktop.svg');
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-color: hsl(225, 100%, 94%);
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: 'Roboto', sans-serif;
+}
+
+.card {
+	width: 22em;
+	border-radius: 20px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	transform: translateY(0);
+	transition: transform 400ms ease-in-out;
+	box-shadow: 0 1em 1em rgba(0, 0, 0, 0.5);
+}
+
+.card-img-top {
+	border-radius: 20px 20px 0 0;
+	flex: 1;
+	width: 100%;
+}
+
+.card-body {
+	padding: 2em;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-body p {
+	color: hsl(224, 23%, 55%);
+}
+
+.price {
+	background-color: hsl(225, 100%, 98%);
+	padding: 0.5em;
+	border-radius: 1em;
+	display: flex;
+	align-items: center;
+}
+
+.price img {
+	width: 2em;
+	height: 2em;
+}
+
+.price p {
+	color: black;
+}
+
+.price a {
+	margin-left: auto;
+	color: hsl(223, 74%, 48%);
+	text-transform: lowercase;
+	text-decoration: none;
+}
+
+.col {
+	display: block;
+	margin-left: 1em;
+}
+
+.col p {
+	margin: 0;
+	line-height: 1.2;
+}
+
+.col p:last-child {
+	color: hsl(224, 23%, 55%);
+}
+
+.card button {
+	flex: 1 1 auto;
+	border: none;
+	margin-top: 1em;
+	padding: 1em;
+	border-radius: 1em;
+}
+
+.card button a {
+	text-decoration: none;
+}
+
+.card button:first-of-type {
+	background-color: hsl(245, 75%, 52%);
+}
+
+.card button:last-of-type {
+	background-color: white;
+}
+
+.card button:first-of-type a {
+	color: white;
+}
+.card button:last-of-type a {
+	color: hsl(224, 23%, 55%);
+}
+
+/* animation */
+button {
+	cursor: pointer;
+}
+
+button:hover {
+	letter-spacing: 0.1em;
+	transition: 0.3s;
+}
