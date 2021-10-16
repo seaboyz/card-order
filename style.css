@@ -101,6 +101,11 @@ body {
 	text-align: start;
 }
 
+.col p:first-of-type {
+	color: #1f2e55;
+	font-weight: 900;
+}
+
 .btn {
 	width: 100%;
 	font-size: 15px;
