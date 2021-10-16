@@ -19,7 +19,7 @@ p {
 	font-weight: 500;
 }
 
-body {
+main {
 	background: url('./images/pattern-background-desktop.svg');
 	background-repeat: no-repeat;
 	background-size: auto;
@@ -76,6 +76,7 @@ body {
 	display: flex;
 	align-items: center;
 	margin-bottom: 2em;
+	cursor: pointer;
 }
 
 .price img {
@@ -83,11 +84,16 @@ body {
 	height: 3em;
 }
 
-.price a {
+.change {
 	margin-left: auto;
 	color: #382ae1;
 	font-size: 14px;
 	font-weight: 500;
+}
+
+.change:hover {
+	text-decoration: none;
+	color: #766cf1;
 }
 
 .col {
@@ -110,7 +116,7 @@ body {
 .btn {
 	width: 100%;
 	font-size: 15px;
-	padding: 1em;
+	padding: 1em 0;
 	border-radius: 11px;
 }
 .btn {
@@ -125,8 +131,38 @@ body {
 	box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
 }
 
+.payment:hover {
+	background: #766cf1;
+}
+
 .cancel {
 	color: #717fa6;
 	text-decoration: none;
 	font-weight: 900;
+}
+.cancel:hover {
+	color: #1f2e55;
+}
+
+@media (max-width: 375px) {
+	.card {
+		width: 87.5%;
+	}
+
+	.card-body {
+		padding: 32px;
+	}
+	.card h1 {
+		font-size: 22px;
+	}
+	.price {
+		padding: 16px;
+		font-size: 14px;
+	}
+	.price p {
+		font-size: 14px;
+	}
+	.payment {
+		margin-bottom: 24px;
+	}
 }
