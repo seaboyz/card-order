@@ -19,23 +19,25 @@ h6 {
 body {
 	margin: 0;
 	color: #717fa6;
-}
-
-main {
-	background: url('./images/pattern-background-desktop.svg');
-	background-repeat: no-repeat;
-	background-size: auto;
-	background-color: #e0e8ff;
-	box-sizing: border-box;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
 	font-family: 'Red Hat Display', sans-serif;
 }
 
+main {
+	/* layout */
+	padding: 5vh 0;
+	/* background */
+	height: 100vh;
+	background: url('./images/pattern-background-desktop.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
 .card {
-	width: 450px;
+	/* layout */
+	margin: 0 auto;
+	max-width: 450px;
+	width: 90%;
+
 	border-radius: 20px;
 	background-color: white;
 	display: flex;
@@ -137,7 +139,4 @@ main {
 }
 .cancel:hover {
 	color: #1f2e55;
-}
-
-@media (max-width: 375px) {
 }
