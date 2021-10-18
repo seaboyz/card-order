@@ -132,11 +132,18 @@ main {
 	background: #766cf1;
 }
 
-.btn-cancel {
+.btn--cancel {
 	color: #717fa6;
 	text-decoration: none;
 	font-weight: 900;
+	margin-bottom: 2em;
 }
 .cancel:hover {
 	color: #1f2e55;
+}
+
+@media (max-width: 640px) {
+	html {
+		font-size: 80%;
+	}
 }
